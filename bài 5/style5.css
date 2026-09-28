@@ -1,0 +1,41 @@
+
+#container{
+    width: 650px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column gap: 35px;
+}
+
+.image{
+    grid-column: 1;
+    grid-row: 1/2;
+    text-align: center;
+    padding-top: 85px;
+}
+
+.text {
+    grid-column: 2;
+}
+
+.header{
+    color: #c2185b;
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    background-color: #ffc0cb;
+    font-weight:bold;
+
+}
+.paragraph1 li{
+    list-style: square;
+}
+.paragraph2 li{
+    list-style: circle;
+}
+
+.footer{
+    float:right;
+    color: #0000ee;
+    text-decoration: underline;
+}
