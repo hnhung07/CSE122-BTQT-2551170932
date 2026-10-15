@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edf2f8;
+    color: rgb(11, 1, 1);
+    padding: 46px 24px;
+}
+
+.cv {
+    display: flex;
+    max-width: 1254px;
+    min-height: 550px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px;
+}
+
+.left {
+    width: 32%;
+    background: linear-gradient(#1565c0,#0d3f7a);
+    color: #ffffff;
+    padding: 40px 32px;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    background-color: #ffffff;
+    color:#1565c0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.left h2 {
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.job {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.contact {
+    text-align: left;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    overflow-wrap: anywhere;
+}
+
+.contact i {
+    width: 18px;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.right {
+    flex: 1;
+    padding: 38px 44px;
+}
+
+.right hr {
+    border: none;
+    height: 3px;
+    background-color: #1565c0;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.intro p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.skills {
+    margin-top: 20px;
+}
+
+.skills span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #e3f0ff;
+    color: #0d3f7a;
+    padding: 9px 20px;
+    margin: 0 6px 8px 0;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.skills i {
+    font-size: 18px;
+}
+
+.education {
+    margin-top: 18px;
+}
+
+.education p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.links {
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+.link a{
+    color: #1565c0;
+    text-decoration: underline;
+    margin-right: 5px;
+}
+
+.links i{
+    font-size: 17px;
+}
+
+.links span {
+    margin: 0 3px;
+}
+
+h3{
+    font-size: 20px;
+    color: #1565c0;
+}
