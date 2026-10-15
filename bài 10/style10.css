@@ -1,0 +1,36 @@
+body {
+    background-color: #f1f5f9;
+}
+.card-header{
+    background-color: #0f766e;
+    color: #FFFFFF;
+}
+.card {
+    border-radius: 16px !important;
+}
+
+.form-title {
+    background-color: #0f766e;
+    color: #FFFFFF;
+}
+
+.form-label {
+    color: #334155;
+    font-weight: bold;
+}
+
+.form-control, .form-select {
+    border: 1px solid #cbd5e1;
+}
+
+.btn-submit {
+    background-color: #0f766e;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.btn-reset {
+    background-color: #e2e8f0;
+    color: #334155;
+    border-radius: 8px;
+}
