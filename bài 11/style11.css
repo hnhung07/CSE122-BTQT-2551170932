@@ -1,0 +1,22 @@
+body {
+    background-color: #0f172a !important;
+    color: #e2e8f0;
+}
+
+.text-center {
+    color: #e2e8f0;
+}
+
+.bg-secondary {
+    background-color: #1e293b !important;
+}
+
+.bg-secondary-subtle {
+    background-color: #1e293b !important;
+    color: #cbd5e1 !important;
+    font-size: 15px;
+}
+
+.text-secondary {
+    color: #94a3b8 !important;
+}
