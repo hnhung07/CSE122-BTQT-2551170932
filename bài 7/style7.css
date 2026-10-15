@@ -1,41 +1,42 @@
-* {
+*{
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#container {
-    width: 680px;
-    margin: 0;
+.container{
+    width: 800px;
+    margin:auto;
     box-shadow: 0px 0px 8px #e5e5e5;
 }
-.header-container {
+
+.header-container{
     text-align: center;
     font-weight: bold;
 }
-h1 {
+
+h1{
     padding: 10px;
-    margin: 0;  
+    margin: 0;
     background-color: #c8102e;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22px;
 }
 
-h2 {
-    margin: 0;
+h2{
+    margin:0;
     padding: 5px;
     background-color: #fbe3e8;
-    color: #c8102e;
-    font-size: 15px;
-   
+    color:#c8102e;
+    font-size:15px;
 }
 
-.main-container {
+.main-container{
     display: flex;
     padding: 15px;
     min-height: 420px;
 }
 
-.main-left {
+.main-left{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -43,23 +44,25 @@ h2 {
     margin-right: 15px;
 }
 
-.main-right {
-    flex: 1;    
+.main-right{
+    flex: 1;
     position: relative;
 }
 
-.main-right::before {
+.main-right::before{
     content: "";
     position: absolute;
     width: 1px;
     height: 65%;
     background-color: #e5e5e5;
 }
-.main-right .image {
+
+.main-right .image{
     float: right;
-    width: 140px;
-    height:220px;
-    margin-left: 15px;
+    width: 150px;
+    height: 220px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .main-right .image img {
@@ -67,23 +70,20 @@ h2 {
     height: auto;
 }
 
-.main-container h3 {
+.main-container h3{
     color: #c8102e;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: bold;  
 }
 
-.main-container h3::before {
-    content: "□";
-    color: #c8102e;
-    font-size: 12px;
-    margin-right: 6px;
-    font-weight: normal;
-}
-
-ul {
+ul{
     padding-left: 20px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
     line-height: 1.5;
+}
+
+.fa-regular {
+    font-size: 10px;
+    margin-right: 6px;
 }
