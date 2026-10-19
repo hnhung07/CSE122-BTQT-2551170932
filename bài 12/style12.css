@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url("./images/Nen.gif");
+    background-repeat: repeat;
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #CCCCCC;
+}
+
+.calendar {
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.year {
+    color: #C62828;
+    margin: 5px;
+}
+
+.month, .day {
+    color: #1565C0;
+    margin: 5px;
+}
+
+.date {
+    color: #C62828;
+    font-size: 52px;
+    margin: 10px;
+}
+
+.greeting {
+    color: #C62828;
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    border: 2px solid #1565C0;
+    border-radius: 10px;
+    padding: 15px 5px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.form input {
+    width: 70px;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn_inputCalendar {
+    width: 65px;
+    padding: 10px;
+    color: white;
+    background-color: #546E7A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    text-align: center;
+    color: red;
+}
