@@ -1,0 +1,142 @@
+:root {
+  --red: #C62828;
+  --red-dark: #8E0000;
+  --yellow: #FFE082;
+  --white: #FFFFFF;
+  --border: #E0E0E0;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr 160px;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header      header"
+    "nav    main        advertising";
+  min-height: 100vh;
+}
+
+.header      { grid-area: header; }
+.nav         { grid-area: nav; }
+.main        { grid-area: main; }
+.advertising { grid-area: advertising; }
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 24px;
+  color: var(--white);
+  background: var(--red) url("./images/Nen_banner.jpg") center / cover no-repeat;
+}
+
+.header h1 {
+  font-size: 24px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+.nav {
+  background: linear-gradient(var(--red), var(--red-dark));
+}
+
+.nav_link {
+  display: block;
+  padding: 12px 20px;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  transition: background 0.2s;
+}
+
+.nav_link:hover,
+.nav_link.active {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 28px;
+  background: var(--white);
+}
+
+.main h2 {
+  color: var(--red);
+  font-size: 28px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  padding: 12px 24px;
+  background: var(--yellow);
+  border-radius: var(--radius);
+  list-style: disc inside;
+}
+
+.menu_link:hover,
+.menu_link.active {
+  font-weight: bold;
+  color: var(--red);
+}
+
+.card {
+  padding: 36px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.card p:first-child {
+  margin-bottom: 24px;
+}
+
+.card p:last-child {
+  text-align: center;
+  line-height: 1.4;
+}
+
+.advertising {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 12px;
+}
+
+.advertising img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "advertising";
+  }
+
+  .advertising {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
