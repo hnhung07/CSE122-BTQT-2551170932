@@ -1,0 +1,65 @@
+body {
+  background: #0f1318;
+  font-family: Arial, sans-serif;
+}
+
+.frame {
+  width: 350px;
+  margin: 20px auto;
+  padding: 16px;
+  background: #1c2226;
+  border-radius: 12px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.frame img {
+  display: block;
+  max-width: 100%;
+}
+
+.caption {
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  background: linear-gradient(90deg, #b8860b, #f5d76e, #b8860b);
+  background-clip: text;
+  color: transparent;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 4px 12px;
+  background: #232b30;
+  color: white;
+  border: 1px solid #3a4348;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.active {
+  background: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.effect-gray        { filter: grayscale(1); }
+.effect-xray        { filter: grayscale(1) invert(1); }
+.effect-invert      { filter: invert(1); }
+.effect-fliph       { transform: scaleX(-1); }
+.effect-flipv       { transform: scaleY(-1); }
+.effect-glow        { filter: drop-shadow(0 0 10px #ff4d6d); }
+.effect-shadow      { filter: drop-shadow(4px 4px 4px black); }
+.effect-bold-shadow { filter: drop-shadow(8px 8px 0 black); }
+.effect-drop-shadow { filter: drop-shadow(6px 6px 8px #ffd54f); }
+.effect-blur        { filter: blur(3px); }
+.effect-wave        { filter: url(#wave-filter); }
+.effect-mask        { mask-image: radial-gradient(circle, black 40%, transparent 75%); }
+.effect-alpha       { filter: opacity(.4); }

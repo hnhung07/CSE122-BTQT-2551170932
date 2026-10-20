@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài 20</title>
+  <link rel="stylesheet" href="style20.css">
+</head>
+<body>
+  <div class="frame">
+    <img id="photo" class="effect-gray" src="./images/hoahong.gif" alt="Hoa hồng">
+    <div class="caption">Special For You</div>
+    
+  </div>
+
+  <div class="toolbar">
+    <button data-effect="gray" class="active">Gray</button>
+    <button data-effect="xray">Xray</button>
+    <button data-effect="invert">Invert</button>
+    <button data-effect="fliph">FlipH</button>
+    <button data-effect="flipv">FlipV</button>
+    <button data-effect="glow">Glow</button>
+    <button data-effect="shadow">Shadow</button>
+    <button data-effect="bold-shadow">Bold Shadow</button>
+    <button data-effect="drop-shadow">DropShadow</button>
+    <button data-effect="blur">Blur</button>
+    <button data-effect="wave">Wave</button>
+    <button data-effect="mask">Mask</button>
+    <button data-effect="alpha">Alpha</button>
+  </div>
+
+  <svg width="0" height="0" style="position:absolute">
+    <filter id="wave-filter">
+      <feTurbulence type="turbulence" baseFrequency="0.02 0.05" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="20"/>
+    </filter>
+  </svg>
+
+  <script src="bai20.js"></script>
+</body>
+</html>
