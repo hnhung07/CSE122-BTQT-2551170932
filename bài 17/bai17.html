@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17</title>
+    <link rel="stylesheet" href="style17.css">
+</head>
+<body>
+    <form id="container">
+        <div class="header">
+            <h1>Đăng ký tài khoản</h1>
+            <p>Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+        </div>
+
+        <div class="main">
+            <div class="card">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" value="Nguyễn Văn An">
+                <p class="message"></p>
+            </div>
+
+            <div class="card">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" value="an.nv@">
+                <p class="message"></p>
+            </div>
+
+            <div class="card">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" value="123">
+                <p class="message"></p>
+            </div>
+
+            <div class="card">
+                <label for="confirm">Xác nhận mật khẩu</label>
+                <input type="password" id="confirm" name="confirm" value="123456">
+                <p class="message"></p>
+            </div>
+        </div>
+        
+        <button type="submit">Đăng ký</button>
+    </form>
+    <script src="bai17.js"></script>
+</body>
+</html>
