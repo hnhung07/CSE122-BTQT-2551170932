@@ -1,0 +1,94 @@
+:root {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --card-bg: #ffffff;
+  --border: #cbd5e1;
+  --accent: #2563eb;
+  --muted: #64748b;
+}
+
+.dark {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --card-bg: #1e293b;
+  --border: #334155;
+  --accent: #60a5fa;
+  --muted: #94a3b8;
+}
+
+*, ::after {
+  box-sizing: border-box;
+  transition: .4s;
+}
+
+body {
+  margin: 0;
+  padding: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.card-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+code {
+  font-family: Menlo, Consolas, monospace;
+}
+
+.note {
+  color: var(--muted);
+}
+
+.toggle {
+  position: relative;
+  width: 90px;
+  height: 44px;
+  border-radius: 22px;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.dark .toggle::after {
+  transform: translateX(46px);
+}
